@@ -1,0 +1,20 @@
+
+/* checkbox */
+.widget .widget-content {
+    margin-top: 10px;
+}
+.widget .widget-content .custom-checkbox {
+    margin-bottom: 8px;
+}
+.widget .widget-content .custom-checkbox:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+.sidebar .widget .widget-content {
+    padding: 14px 20px;
+}
+.widget .widget-content {
+    margin-top: 10px;
+}

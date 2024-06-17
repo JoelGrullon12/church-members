@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+<div class="row">
+    <div class="col-lg-3">
+        <app-search-sidebar></app-search-sidebar>
+    </div>
+    <div class="col-lg-9">
+        <div class="row mb-4">
+            <div class="col-3">
+                <a class="btn btn-dark text-capitalize" href="#"><i class="fa fa-plus me-2"></i>Nuevo miembro</a>
+            </div>
+            <div class="col-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar"
+                        aria-label="Buscar" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <fa-icon [icon]="faMagGlass"></fa-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3">
+                <form class="form-inline">
+                    <div class="form-group d-flex align-items-center gap-1 mb-0">
+                        <label class="justify-content-start mr-2 text-nowrap">Ordenar :</label>
+                        <select class="form-control basic-select select2-hidden-accessible" data-select2-id="1"
+                            tabindex="-1" aria-hidden="true">
+                            <option data-select2-id="3">A-Z</option>
+                            <option>Z-A</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4">
+            <div class="col-12">
+                <h6 class="mb-0">Mostrando 1-10 de <span class="text-primary">28 miembros</span></h6>
+            </div>
+        </div>
+
+        <!--AQUI VA EL CONTENIDO-->
+        <app-member-info-card></app-member-info-card>
+        <app-member-info-card></app-member-info-card>
+        <app-member-info-card></app-member-info-card>
+        <app-member-info-card></app-member-info-card>
+        <app-member-info-card></app-member-info-card>
+        <!--FIN DEL CONTENIDO-->
+
+
+        <div class="row">
+            <div class="col-12 text-center mt-4 mt-sm-5">
+                <ul class="pagination justify-content-center mb-0">
+                    <li class="page-item disabled"> <span class="page-link">Prev</span> </li>
+                    <li class="page-item active" aria-current="page"><span class="page-link">1 </span> <span
+                            class="sr-only">(current)</span></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">25</a></li>
+                    <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
